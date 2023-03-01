@@ -42,9 +42,11 @@ jobs:
       - name: Install
         run: nr build
 
+      - name: Adduser
+        run: npm adduser
+
       - name: Publish
         run: nr publish
-        env:    
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
       # - name: Test
       #   run: nr test --if-present
