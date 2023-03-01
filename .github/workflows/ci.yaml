@@ -34,9 +34,6 @@ jobs:
           cache: pnpm
 
       - name: Setup
-       run: npm adduser
-
-      - name: Setup
         run: npm i -g @antfu/ni
 
       - name: Install
@@ -47,5 +44,7 @@ jobs:
 
       - name: Publish
         run: nr publish
+        env:    
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       # - name: Test
       #   run: nr test --if-present
