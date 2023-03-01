@@ -33,6 +33,7 @@ jobs:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
 
+      - name: Setup
        run: npm adduser
 
       - name: Setup
