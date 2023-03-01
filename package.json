@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build":"pnpm  --filter=alkaid-* run build",
+    "publish":"changeset publish"
   },
   "keywords": [],
   "author": "",
