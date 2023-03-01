@@ -42,8 +42,7 @@ jobs:
       - name: Install
         run: nr build
 
-      - name: Adduser
-        run: npm adduser
+
 
       - name: Publish
         run: nr publish
