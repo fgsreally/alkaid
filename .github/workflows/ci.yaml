@@ -41,6 +41,8 @@ jobs:
 
       - name: Install
         run: nr build
-
+        
+      - name: Publish
+        run: nr publish
       # - name: Test
       #   run: nr test --if-present
